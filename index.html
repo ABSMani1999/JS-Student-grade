@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Student Grade</title>
+        <meta charset ="utf-8">
+		<meta name="description" content=""/>
+		<meta name="keywords" content="HTML,CSS,Java script"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    </head>
+    <body>
+        <script>
+            var t = parseInt(prompt("Enter the tamil mark"));
+            var e = parseInt(prompt("Enter the english mark"));
+            var m = parseInt(prompt("Enter the maths mark"));
+            var s = parseInt(prompt("Enter the science mark"));
+            var ss = parseInt(prompt("Enter the socal science mark"));
+
+            mark = () => {
+               var c = t+e+m+s+ss;
+                return res = c/5;
+            }
+            mark();
+            console.log(res);
+            if(res>90 && 100>res){
+                document.write("This mark is A Grade");
+            }
+            else if(90>res && 75<res){
+                document.write("This mark is B Grade");
+            }
+            else if(75>res && 50<res){
+                document.write("This mark is C Grade");
+            }
+            else if(50>res && 30<res){
+                document.write("This mark is D Grade");
+            }
+            else{
+                document.write("This mark is fail");
+            }
+        </script>
+    </body>
+</html>
